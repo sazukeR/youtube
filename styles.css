@@ -4,3 +4,104 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  background-color: rgb(192, 187, 182);
+}
+
+header i {
+  font-size: 24px;
+}
+
+header .c-i {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+header .header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+header .burgerandlogo {
+  display: inline-flex;
+  align-items: center;
+}
+
+header .c-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .burgerandlogo .logo {
+  width: 90px;
+  height: 20px;
+  margin-left: 1rem;
+}
+
+
+header .search {
+  display: inline-flex;
+  width: 50%;
+}
+
+
+header .search .entrytext {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+header .search .entrytext input {
+  height: 24px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding-left: 0.5rem;
+}
+
+header .search .entrytext .glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header .search .entrytext .glass i {
+  font-size: 22px;
+}
+
+header .search .speech {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: brown;
+}
+
+header .userinfo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .userinfo .userphoto {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+header .userinfo .userphoto img {
+  width: 100%;
+  height: auto;
+}
