@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 header {
@@ -21,6 +22,14 @@ header .c-i {
   width: 40px;
   height: 40px;
   padding: 8px;
+}
+
+.style-scope,
+.yt-icon {
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 header .header {
@@ -75,6 +84,23 @@ header .search .entrytext .glass {
   padding-right: 5px;
 }
 
+main aside .nav a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+}
+
+main aside .nav5 a i {
+  color: red;
+}
+
+main aside .nav a i {
+  margin-right: 0.7rem;
+  font-size: 0.9rem;
+}
+
 header .search .entrytext .glass i {
   font-size: 22px;
 }
@@ -101,6 +127,11 @@ header .userinfo .userphoto {
   padding: 8px;
 }
 
+main section .videos figure img {
+  width: 100%;
+  height: auto;
+}
+
 header .userinfo .userphoto img {
   width: 100%;
   height: auto;
@@ -108,12 +139,13 @@ header .userinfo .userphoto img {
 
 main {
   display: flex;
+  width: 100%;
 }
 
 main aside {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 15%;
   height: 90vh;
   overflow-y: auto;
 }
@@ -128,7 +160,6 @@ main aside .nav div {
   flex-direction: column;
   overflow: hidden;
   text-overflow: ellipsis;
-  
 }
 
 main aside a {
@@ -152,29 +183,12 @@ main aside a:hover {
   background-color: gray;
 }
 
-main aside a i {
-  margin-right: 0.7rem;
-  font-size: 0.9rem;
-}
-
-main aside a img {
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 0.9rem;
-  margin-right: 0.7rem;
-  border-radius: 50%;
-}
-
-main aside .nav5 a i {
-  color: #ff0000;
-}
-
- main aside .nav .nav7 {
+main aside .nav .nav7 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: aquamarine;
-} 
+}
 
 main aside .nav .nav7 span {
   font-size: 0.5rem;
@@ -188,4 +202,43 @@ main aside .nav .nav7 span {
 
 main section {
   width: 85%;
+}
+
+main section .topics {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 10px 5px 5px 5px;
+  overflow-x: hidden;
+}
+
+main section .topics a {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  padding: 5px 3px;
+}
+
+main section .topics a:last-child {
+  position: sticky;
+  right: 10px;
+  background-color: red;
+}
+
+main section .topics a:first-child {
+  position: sticky;
+  left: 10px;
+  background-color: red;
+}
+
+main section .videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  overflow: auto;
+  height: 85vh;
+}
+
+main section .videos figure {
+  display: flex;
+  flex-direction: column;
 }
