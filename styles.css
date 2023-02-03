@@ -105,3 +105,87 @@ header .userinfo .userphoto img {
   width: 100%;
   height: auto;
 }
+
+main {
+  display: flex;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+main aside .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+main aside .nav div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+main aside a {
+  flex-grow: 1;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0.5rem;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  padding: 0.7rem;
+  margin-left: 0.2rem;
+}
+
+main aside a:hover {
+  background-color: gray;
+}
+
+main aside a i {
+  margin-right: 0.7rem;
+  font-size: 0.9rem;
+}
+
+main aside a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+}
+
+main aside .nav5 a i {
+  color: #ff0000;
+}
+
+ main aside .nav .nav7 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+} 
+
+main aside .nav .nav7 span {
+  font-size: 0.5rem;
+  font-family: Roboto, Arial, sans-serif;
+  color: rgb(78, 77, 77);
+  margin-top: 0.2rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.2rem;
+  word-spacing: -0.6px;
+}
+
+main section {
+  width: 85%;
+}
