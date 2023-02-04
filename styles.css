@@ -130,6 +130,7 @@ header .userinfo .userphoto {
 main section .videos figure img {
   width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
 header .userinfo .userphoto img {
