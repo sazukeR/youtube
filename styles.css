@@ -252,3 +252,15 @@ main section .videos figure {
   display: flex;
   flex-direction: column;
 }
+
+main section .videos figcaption {
+  color: #0f0f0f;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+main section .videos p {
+  color: #606060;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+}
