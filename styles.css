@@ -264,3 +264,21 @@ main section .videos p {
   font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
 }
+
+@media screen and (max-width: 1300px) {
+  main section .videos p {
+    background-color: rgb(240, 11, 11);
+  }
+
+  main aside nav .nav2, 
+  main aside nav .nav3, 
+  main aside nav .nav4, 
+  main aside nav .nav5, 
+  main aside nav .nav6,
+  main aside nav .nav7 {
+    display: none;
+  }
+
+  
+  
+}
