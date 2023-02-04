@@ -216,9 +216,14 @@ main section .topics {
 }
 
 main section .topics a {
+  font-family: Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: black;
   font-size: 0.7rem;
   white-space: nowrap;
   padding: 5px 3px;
+  background-color: rgb(216, 205, 205);
+  border-radius: 3px;
 }
 
 main section .topics a:last-child {
