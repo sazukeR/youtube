@@ -229,13 +229,16 @@ main section .topics a {
 main section .topics a:last-child {
   position: sticky;
   right: 10px;
-  background-color: red;
+  background-color: rgb(216, 205, 205);
+  border-radius: 50%;
+  
 }
 
 main section .topics a:first-child {
   position: sticky;
   left: 10px;
-  background-color: red;
+  background-color: rgb(216, 205, 205);
+  border-radius: 50%;
 }
 
 main section .videos {
