@@ -177,10 +177,12 @@ main aside a {
   font-weight: bold;
   padding: 0.7rem;
   margin-left: 0.2rem;
+  color: black;
+  border-radius: 3px;
 }
 
 main aside a:hover {
-  background-color: gray;
+  background-color: rgb(216, 205, 205);
 }
 
 main aside .nav .nav7 {
