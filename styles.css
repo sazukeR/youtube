@@ -6,10 +6,6 @@ body {
   overflow: hidden;
 }
 
-header {
-  background-color: rgb(192, 187, 182);
-}
-
 header i {
   font-size: 24px;
   color: black;
@@ -60,8 +56,8 @@ header .search .entrytext {
   display: flex;
   align-items: center;
   width: 85%;
-  border: 1px solid red;
-  border-radius: 10px;
+  border: 2px solid rgb(216, 205, 205);
+  border-radius: 20px;
 }
 
 header .search .entrytext input {
@@ -70,6 +66,7 @@ header .search .entrytext input {
   border: none;
   background-color: transparent;
   padding-left: 0.5rem;
+  border-right: solid 2px rgb(216, 205, 205);
 }
 
 header .search .entrytext input:focus {
@@ -101,8 +98,15 @@ main aside .nav a i {
   font-size: 0.9rem;
 }
 
+header .search .speech i {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+}
+
 header .search .entrytext .glass i {
-  font-size: 22px;
+  font-size: 1rem;
+  padding: 0 15px;
 }
 
 header .search .speech {
@@ -110,8 +114,10 @@ header .search .speech {
   justify-content: center;
   margin-left: 1rem;
   border-radius: 50%;
-  padding: 0.5rem;
-  background-color: brown;
+}
+
+header .search .speech i:hover {
+  background-color: rgb(216, 205, 205);
 }
 
 header .userinfo {
@@ -268,6 +274,8 @@ main section .videos p {
 @media screen and (max-width: 1300px) {
   main aside {
     width: 100px;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   main aside nav .nav2,
@@ -283,22 +291,28 @@ main section .videos p {
     display: none;
   }
 
+  main aside .nav .nav1 {
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   main aside a {
-    position: relative;
     display: block;
     white-space: normal;
     overflow-wrap: normal;
+    text-align: center;
+    line-height: 20px;
   }
 
   main aside a ::first-letter {
-    color: red;
+    color: #000;
     display: block;
-    float: left;
     font-size: xx-large;
     width: 100%;
-    position: absolute;
     line-height: normal;
-    margin-right: 0.2em;
-    top: -0.2em;
+    margin-right: auto;
+    margin-left: 15px;
+    text-align: center;
   }
 }
