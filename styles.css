@@ -266,19 +266,39 @@ main section .videos p {
 }
 
 @media screen and (max-width: 1300px) {
-  main section .videos p {
-    background-color: rgb(240, 11, 11);
+  main aside {
+    width: 100px;
   }
 
-  main aside nav .nav2, 
-  main aside nav .nav3, 
-  main aside nav .nav4, 
-  main aside nav .nav5, 
+  main aside nav .nav2,
+  main aside nav .nav3,
+  main aside nav .nav4,
+  main aside nav .nav5,
   main aside nav .nav6,
-  main aside nav .nav7 {
+  main aside .nav .nav7 {
     display: none;
   }
 
-  
-  
+  main aside h5 {
+    display: none;
+  }
+
+  main aside a {
+    position: relative;
+    display: block;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
+  main aside a ::first-letter {
+    color: red;
+    display: block;
+    float: left;
+    font-size: xx-large;
+    width: 100%;
+    position: absolute;
+    line-height: normal;
+    margin-right: 0.2em;
+    top: -0.2em;
+  }
 }
