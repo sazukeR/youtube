@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 header i {
@@ -249,7 +251,7 @@ main section .topics a:first-child {
 
 main section .videos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   overflow: auto;
   height: 85vh;
 }
@@ -272,8 +274,19 @@ main section .videos p {
 }
 
 @media screen and (max-width: 1300px) {
+
+  main {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  main .all {
+    width: 100%;
+  }
+
   main aside {
-    width: 100px;
+    width: 10%;
+    min-width: 100px;
     justify-content: flex-start;
     align-items: center;
   }
