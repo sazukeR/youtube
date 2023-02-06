@@ -1,0 +1,330 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header i {
+  font-size: 24px;
+  color: black;
+}
+
+header .c-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.style-scope,
+.yt-icon {
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+header .burgerandlogo {
+  display: inline-flex;
+  align-items: center;
+}
+
+header .burgerandlogo .logo {
+  width: 90px;
+  height: 20px;
+  margin-left: 1rem;
+}
+
+header .search {
+  display: inline-flex;
+  width: 50%;
+}
+
+header .search .entrytext {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  border: 2px solid rgb(216, 205, 205);
+  border-radius: 20px;
+}
+
+header .search .entrytext input {
+  height: 24px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding-left: 0.5rem;
+  border-right: solid 2px rgb(216, 205, 205);
+}
+
+header .search .entrytext input:focus {
+  outline: none;
+}
+
+header .search .entrytext .glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+main aside .nav a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+}
+
+main aside .nav5 a i {
+  color: red;
+}
+
+main aside .nav a i {
+  margin-right: 0.7rem;
+  font-size: 0.9rem;
+}
+
+header .search .speech i {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+header .search .entrytext .glass i {
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+header .search .speech {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+
+header .search .speech i:hover {
+  background-color: rgb(216, 205, 205);
+}
+
+header .userinfo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .userinfo .userphoto {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+main section .videos figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+header .userinfo .userphoto img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+main aside .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+main aside .nav div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main aside a {
+  flex-grow: 1;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0.5rem;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  padding: 0.7rem;
+  margin-left: 0.2rem;
+  color: black;
+  border-radius: 3px;
+}
+
+main aside a:hover {
+  background-color: rgb(216, 205, 205);
+}
+
+main aside .nav .nav7 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+}
+
+main aside .nav .nav7 span {
+  font-size: 0.5rem;
+  font-family: Roboto, Arial, sans-serif;
+  color: rgb(78, 77, 77);
+  margin-top: 0.2rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.2rem;
+  word-spacing: -0.6px;
+}
+
+main section {
+  width: 85%;
+}
+
+main section .topics {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 10px 5px 5px 5px;
+  overflow-x: hidden;
+}
+
+main section .topics a {
+  font-family: Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  padding: 5px 3px;
+  background-color: rgb(216, 205, 205);
+  border-radius: 3px;
+}
+
+main section .topics a:last-child {
+  position: sticky;
+  right: 10px;
+  background-color: rgb(216, 205, 205);
+  border-radius: 50%;
+}
+
+main section .topics a:first-child {
+  position: sticky;
+  left: 10px;
+  background-color: rgb(216, 205, 205);
+  border-radius: 50%;
+}
+
+main section .videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: auto;
+  height: 85vh;
+}
+
+main section .videos figure {
+  display: flex;
+  flex-direction: column;
+}
+
+main section .videos figcaption {
+  color: #0f0f0f;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+main section .videos p {
+  color: #606060;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  main .all {
+    width: 100%;
+  }
+
+  main aside {
+    width: 10%;
+    min-width: 100px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main aside nav .nav2,
+  main aside nav .nav3,
+  main aside nav .nav4,
+  main aside nav .nav5,
+  main aside nav .nav6,
+  main aside .nav .nav7 {
+    display: none;
+  }
+
+  main aside h5 {
+    display: none;
+  }
+
+  main aside .nav .nav1 {
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main aside a {
+    display: block;
+    white-space: normal;
+    overflow-wrap: normal;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  main aside a ::first-letter {
+    color: #000;
+    display: block;
+    font-size: xx-large;
+    width: 100%;
+    line-height: normal;
+    margin-right: auto;
+    margin-left: 15px;
+    text-align: center;
+  }
+}
