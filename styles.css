@@ -288,25 +288,15 @@ main section .videos p {
     min-width: 100px;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 15px;
   }
 
-  main aside nav .nav2,
-  main aside nav .nav3,
-  main aside nav .nav4,
-  main aside nav .nav5,
-  main aside nav .nav6,
-  main aside .nav .nav7 {
+  main aside nav .hidden {
     display: none;
   }
 
   main aside h5 {
     display: none;
-  }
-
-  main aside .nav .nav1 {
-    margin-top: 15px;
-    justify-content: flex-start;
-    align-items: center;
   }
 
   main aside a {
